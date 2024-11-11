@@ -80,6 +80,8 @@
     <addaction name="actionChange"/>
     <addaction name="actionShow"/>
     <addaction name="actionFont"/>
+    <addaction name="actionFontColor"/>
+    <addaction name="actionEditorColor"/>
    </widget>
    <widget class="QMenu" name="menu_V">
     <property name="title">
@@ -126,6 +128,7 @@
    <addaction name="actionReplace"/>
    <addaction name="separator"/>
    <addaction name="actionFont"/>
+   <addaction name="actionFontColor"/>
    <addaction name="actionShow"/>
    <addaction name="actionChange"/>
    <addaction name="separator"/>
@@ -344,6 +347,9 @@
    </property>
   </action>
   <action name="actionChange">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="res.qrc">
      <normaloff>:/img/change.png</normaloff>:/img/change.png</iconset>
@@ -359,6 +365,9 @@
    </property>
   </action>
   <action name="actionToolBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="res.qrc">
      <normaloff>:/img/tool.png</normaloff>:/img/tool.png</iconset>
@@ -374,6 +383,9 @@
    </property>
   </action>
   <action name="actionStatusBar">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
    <property name="icon">
     <iconset resource="res.qrc">
      <normaloff>:/img/status.png</normaloff>:/img/status.png</iconset>
@@ -436,6 +448,10 @@
    </property>
   </action>
   <action name="actionFontColor">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/img/color.png</normaloff>:/img/color.png</iconset>
+   </property>
    <property name="text">
     <string>字体颜色</string>
    </property>
