@@ -50,6 +50,10 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->actionToolBar->setChecked(true);
     ui->actionStatusBar->setChecked(true);
+    ui->actionShow->setChecked(false);
+    on_actionShow_triggered(false);
+
+
 
 }
 
@@ -365,4 +369,10 @@ void MainWindow::on_textEdit_cursorPositionChanged()
 
 
 
+
+
+void MainWindow::on_actionShow_triggered(bool checked)
+{
+    ui->textEdit->hideLineNumberArea(!checked);
+}
 
